@@ -2,7 +2,7 @@
 
 Personal website and portfolio of **Timur Garipov**, full-stack engineer.
 
-Live: https://timur-garipov.dev
+Live: https://timur-garipov.com
 GitHub: https://github.com/SaltyRain
 
 ---
