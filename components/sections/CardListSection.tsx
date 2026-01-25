@@ -1,4 +1,5 @@
 import { Section } from "@/components/ui/Section";
+import { Link } from "@/components/Link";
 
 type Item = {
   title: string;
@@ -24,12 +25,12 @@ export function CardListSection({
             <div className="space-y-1">
               <div className="text-sm font-semibold">
                 {item.href ? (
-                  <a
+                  <Link
                     href={item.href}
                     className="underline-offset-4 hover:underline"
                   >
                     {item.title}
-                  </a>
+                  </Link>
                 ) : (
                   item.title
                 )}

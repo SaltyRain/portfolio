@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { Links } from "@/types/content";
+import { Link } from "@/components/Link";
 
 export function ProfileCard({
   name,
@@ -30,30 +31,30 @@ export function ProfileCard({
       </div>
 
       <div className="flex flex-wrap gap-2">
-        <a
+        <Link
           href={links.github}
           className="text-sm text-zinc-700 underline-offset-4 hover:underline dark:text-zinc-300"
         >
           GitHub
-        </a>
+        </Link>
 
         <span className="text-zinc-300 dark:text-zinc-700">·</span>
 
-        <a
+        <Link
           href={links.email}
           className="text-sm text-zinc-700 underline-offset-4 hover:underline dark:text-zinc-300"
         >
           Email
-        </a>
+        </Link>
 
         <span className="text-zinc-300 dark:text-zinc-700">·</span>
 
-        <a
+        <Link
           href={links.linkedin}
           className="text-sm text-zinc-700 underline-offset-4 hover:underline dark:text-zinc-300"
         >
           LinkedIn
-        </a>
+        </Link>
       </div>
     </div>
   );
