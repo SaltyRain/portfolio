@@ -49,6 +49,7 @@ export default function Home() {
               links={site.links}
               emailLabel="tbgaripov@gmail.com"
               githubLabel="SaltyRain"
+              linkedinLabel="tbgaripov"
             />
 
             <footer className="pt-6 text-xs text-zinc-500 dark:text-zinc-500">
