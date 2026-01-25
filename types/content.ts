@@ -38,6 +38,7 @@ export type HomeContent = {
 export type SiteContent = {
   name: string;
   title: string;
+  location: string;
   description: string;
   links: Links;
 };

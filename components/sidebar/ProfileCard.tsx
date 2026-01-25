@@ -1,16 +1,19 @@
 import Image from "next/image";
 import type { Links } from "@/types/content";
 import { Link } from "@/components/Link";
+import { MapPin } from "lucide-react";
 
 export function ProfileCard({
   name,
   role,
+  location,
   education,
   avatarSrc = "/avatar.jpg",
   links,
 }: {
   name: string;
   role: string;
+  location: string;
   education: string;
   avatarSrc?: string;
   links: Links;
@@ -32,6 +35,10 @@ export function ProfileCard({
         <div className="text-sm text-zinc-600 dark:text-zinc-400">{role}</div>
         <div className="text-xs text-zinc-500 dark:text-zinc-500">
           {education}
+        </div>
+        <div className="flex items-center gap-1.5 text-xs text-zinc-500 dark:text-zinc-500 mt-2">
+          <MapPin className="h-3.5 w-3.5" aria-hidden="true" />
+          <span>{location}</span>
         </div>
       </div>
 

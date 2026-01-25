@@ -20,6 +20,7 @@ export default function Home() {
             <ProfileCard
               name={site.name}
               role="Full-stack Engineer"
+              location={site.location}
               education="MSc Computer Science"
               links={site.links}
             />
