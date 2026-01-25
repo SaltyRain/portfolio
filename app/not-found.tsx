@@ -1,4 +1,5 @@
 import { Link } from "@/components/Link";
+import { site } from "@/content/site";
 
 export default function NotFound() {
   return (
@@ -29,7 +30,7 @@ export default function NotFound() {
             </Link>
 
             <Link
-              href="mailto:tbgaripov@gmail.com"
+              href={site.links.email}
               className="text-sm text-zinc-700 underline-offset-4 hover:underline dark:text-zinc-300"
             >
               Email me
