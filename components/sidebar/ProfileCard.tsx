@@ -5,11 +5,13 @@ import { Link } from "@/components/Link";
 export function ProfileCard({
   name,
   role,
+  education,
   avatarSrc = "/avatar.jpg",
   links,
 }: {
   name: string;
   role: string;
+  education: string;
   avatarSrc?: string;
   links: Links;
 }) {
@@ -28,6 +30,9 @@ export function ProfileCard({
       <div className="space-y-1">
         <div className="text-sm font-semibold">{name}</div>
         <div className="text-sm text-zinc-600 dark:text-zinc-400">{role}</div>
+        <div className="text-xs text-zinc-500 dark:text-zinc-500">
+          {education}
+        </div>
       </div>
 
       <div className="flex flex-wrap gap-2">

@@ -8,6 +8,8 @@ export type Project = {
   title: string;
   note: string;
   href?: string;
+  highlights?: readonly string[];
+  stack?: readonly string[];
 };
 
 export type Contribution = {
@@ -16,11 +18,21 @@ export type Contribution = {
   note?: string;
 };
 
+export type Education = {
+  title: string;
+  institution: string;
+  period: string;
+  href?: string;
+  note?: string;
+};
+
 export type HomeContent = {
   projects: Project[];
   contributes: Contribution[];
+  education: Education[];
   tools: string[];
   experience: string[];
+  languages: string[];
 };
 
 export type SiteContent = {

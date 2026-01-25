@@ -20,18 +20,20 @@ export default function Home() {
             <ProfileCard
               name={site.name}
               role="Full-stack Engineer"
+              education="MSc Computer Science"
               links={site.links}
             />
             <TagSection title="Tools & Software" items={home.tools} />
             <TagSection title="Experience" items={home.experience} />
+            <TagSection title="Languages" items={home.languages} />
           </>
         }
         right={
           <>
             <Hero
               handle="SaltyRain"
-              headline="Hey, I'm Timur — a full-stack engineer building web products and applied search systems."
-              description="I work mostly with TypeScript, Next.js, Postgres. I like clean UX, fast pages, and pragmatic systems that ship."
+              headline="Hey, I’m Timur — a full-stack engineer building modern web products."
+              description="I focus on frontend architecture and UX, while actively working across the backend, data and AI-powered features. Experienced with TypeScript, Python, Next.js, Postgres and search-driven systems."
             />
 
             <CardListSection title="Projects" items={home.projects} />
@@ -42,6 +44,16 @@ export default function Home() {
                 title: c.title,
                 note: c.note,
                 href: c.repo,
+              }))}
+            />
+
+            <CardListSection
+              title="Education"
+              items={home.education.map((e) => ({
+                title: e.title,
+                note: `${e.institution} · ${e.period}`,
+                href: e.href,
+                extranote: e.note,
               }))}
             />
 

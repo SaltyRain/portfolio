@@ -3,11 +3,39 @@ import type { HomeContent } from "@/types/content";
 export const home: HomeContent = {
   projects: [
     {
-      title: "Krona (e-commerce)",
-      note: "Next.js, Prisma, Postgres",
+      title: "Krona — E-commerce Platform",
+      note: "E-commerce platform for a timber manufacturer.",
       href: "https://www.kronawood.ru/",
+      stack: ["Next.js", "TypeScript", "Prisma", "Postgres", "Material UI"],
+      highlights: [
+        "SEO-first architecture",
+        "Hierarchical data model & facets",
+        "Custom CMS with role-based access",
+        "Type-safe forms & validation",
+      ],
     },
-    { title: "Smart Search", note: "OpenSearch, hybrid retrieval, Python" },
+    {
+      title: "Angelina Garipova — Portfolio Website",
+      note: "Custom portfolio site for an architect (design + build + maintenance).",
+      href: "https://www.angelinagaripova.com/",
+      stack: ["Next.js", "TypeScript", "CSS Modules"],
+      highlights: [
+        "File-based CMS",
+        "Dynamic routes",
+        "Zod schema validation",
+        "Image metadata",
+      ],
+    },
+    {
+      title: "Smart Search",
+      note: "Hybrid search experiments and indexing pipeline.",
+      stack: ["Python", "OpenSearch", "FastAPI"],
+      highlights: [
+        "Lexical + vector retrieval",
+        "Typed client layer",
+        "Batch indexing",
+      ],
+    },
   ],
   contributes: [
     {
@@ -19,6 +47,22 @@ export const home: HomeContent = {
       title: "OpenDota",
       repo: "https://github.com/odota/web",
       note: "Localization / contributions",
+    },
+  ],
+  education: [
+    {
+      title: "MSc Computer Science",
+      institution: "University of Passau, Germany",
+      href: "https://www.uni-passau.de/en/",
+      period: "2021 - 2025",
+      note: "Specialization in Data Science and Machine Learning.",
+    },
+    {
+      title: "BSc Computer Science",
+      institution: "ITMO University, Russia",
+      href: "https://en.itmo.ru/",
+      period: "2014 - 2019",
+      note: "Core CS foundations with coursework in databases, OOP, UX/UI and computer graphics.",
     },
   ],
   tools: ["VS Code", "Terminal", "Copilot", "ChatGPT", "Discord", "Vercel"],
@@ -35,4 +79,5 @@ export const home: HomeContent = {
     "Docker",
     "RAG / LLMs",
   ],
+  languages: ["English (C1)", "German (B1)", "Russian (Native)"],
 };
