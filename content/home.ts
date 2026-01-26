@@ -65,7 +65,15 @@ export const home: HomeContent = {
       note: "Core CS foundations with coursework in databases, OOP, UX/UI and computer graphics.",
     },
   ],
-  tools: ["VS Code", "Terminal", "Copilot", "ChatGPT", "Discord", "Vercel"],
+  tools: [
+    "VS Code",
+    "Terminal",
+    "PyCharm",
+    "Copilot",
+    "ChatGPT",
+    "Discord",
+    "Vercel",
+  ],
   experience: [
     "TypeScript",
     "Python",
