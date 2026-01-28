@@ -58,7 +58,7 @@ export const home: HomeContent = {
       note: "Specialization in Data Science and Machine Learning.",
     },
     {
-      title: "BSc Computer Science",
+      title: "BSc Information Systems and Technologies",
       institution: "ITMO University, Russia",
       href: "https://en.itmo.ru/",
       period: "2014 - 2019",
