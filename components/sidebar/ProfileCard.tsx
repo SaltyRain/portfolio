@@ -67,6 +67,15 @@ export function ProfileCard({
         >
           LinkedIn
         </Link>
+
+        <span className="text-zinc-300 dark:text-zinc-700">·</span>
+
+        <Link
+          href={links.leetcode}
+          className="text-sm text-zinc-700 underline-offset-4 hover:underline dark:text-zinc-300"
+        >
+          LeetCode
+        </Link>
       </div>
     </div>
   );

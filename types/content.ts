@@ -2,6 +2,7 @@ export type Links = {
   github: string;
   email: string;
   linkedin: string;
+  leetcode: string;
 };
 
 export type Project = {

@@ -10,5 +10,6 @@ export const site: SiteContent = {
     github: "https://github.com/SaltyRain",
     email: "mailto:tbgaripov@gmail.com",
     linkedin: "https://www.linkedin.com/in/tbgaripov",
+    leetcode: "https://leetcode.com/u/SaltyRain/",
   },
 };
