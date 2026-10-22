@@ -3,6 +3,17 @@ import type { HomeContent } from "@/types/content";
 export const home: HomeContent = {
   projects: [
     {
+      title: "Taleh Studio — Architecture, Interiors & Yacht Design",
+      note: "Multi-page portfolio website for an architecture studio, showcasing architecture, interiors and yacht design through a clean UX and design-led UI.",
+      href: "https://taleh.studio/",
+      stack: ["Next.js", "File-based CMS"],
+      highlights: [
+        "Multi-page portfolio",
+        "Clean, intuitive UX",
+        "Design-led UI",
+      ],
+    },
+    {
       title: "Krona — E-commerce Platform",
       note: "E-commerce platform for a timber manufacturer.",
       href: "https://www.kronawood.ru/",
@@ -15,7 +26,7 @@ export const home: HomeContent = {
       ],
     },
     {
-      title: "Angelina Garipova — Portfolio Website",
+      title: "Architect Portfolio Website",
       note: "Custom portfolio site for an architect (design + build + maintenance).",
       href: "https://www.angelinagaripova.com/",
       stack: ["Next.js", "TypeScript", "CSS Modules"],
